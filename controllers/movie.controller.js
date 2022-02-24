@@ -4,7 +4,7 @@ const Movie = require('../models/movie.model')
 
 const router = express.Router()
 
-router.post("",async(req,res)=>{
+router.post("/",async(req,res)=>{
     try {
         const movies = await Movie.create(req.body);
 
@@ -14,7 +14,7 @@ router.post("",async(req,res)=>{
     }
 })
 
-router.get("",async(req,res)=>{
+router.get("/",async(req,res)=>{
     try {
         const movies = await Movie.find().lean().exec()
 
