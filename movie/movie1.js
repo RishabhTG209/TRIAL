@@ -56,7 +56,7 @@ function showMovie(movie){
             let data12=await response12.json();
             console.log("Data: ",data12);
             data12.rating=data12.rating+1;
-            console.log(data12.rating);
+            console.log(data12.rating,data12.title);
         })
         // let poster=document.createElement("img")
         // poster.src=movie.Poster;
