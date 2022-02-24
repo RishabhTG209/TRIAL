@@ -1,5 +1,12 @@
     
 //Variables Declare
+// const express = require('express')
+// const cors = require('cors')
+// const connect = require("./configs/db")
+// const app = express()
+// const Heroku = require('heroku-client')
+// const heroku = new Heroku({ token: process.env.HEROKU_API_TOKEN })
+
 
 let datacheck=document.querySelector("#check");
 let datadiv=document.querySelector("#inputdata");
@@ -8,6 +15,11 @@ let movies_div=document.createElement("div");
 let movieWaiting;
 let p;
 let divtrailer=document.createElement("div");
+
+// heroku.get('/movielist').then(apps => {
+//     console.log(apps)
+//   })
+
 
 async function fetchdata(){
         datadiv.innerHTML="";
@@ -39,7 +51,7 @@ function showMovie(movie){
             console.log(elem._id);
             let movieName= elem._id;
             let response12=await fetch(
-                `https://vast-dusk-74727.herokuapp.com/movielist/update/${movieName}`
+                `https://vast-dusk-74727.herokuapp.com/movielist/single/${movieName}`
             );
             let data12=await response12.json();
             console.log("Data: ",data12);
