@@ -3,6 +3,8 @@ const express = require('express')
 const connect = require("./configs/db")
 const app = express()
 
+require('dotenv').config();
+
 app.use(express.json())
 
 const movieSchema= require("./controllers/movie.controller")
