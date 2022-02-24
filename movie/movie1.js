@@ -17,14 +17,15 @@ async function fetchdata(){
             let movieName=document.querySelector("#movieinput").value;
 
                 let response=await fetch(
-                    `https://myapplication-nine-west.herokuapp.com/players`
+                    `https://vast-dusk-74727.herokuapp.com/movielist`
+                    // `https://myapplication-nine-west.herokuapp.com/players`
                     // `https://www.omdbapi.com/?t=${movieName}&apikey=46d687e2`
                 );
                 let data=await response.json();
-                console.log(data)
+                console.log("Data: ",data);
                     showMovie(data);
                     // fetchtrailer(event.Title);
-                console.log("Data: ",data);     
+                     
         }
         catch(error){
             console.log("Error : ",error);
