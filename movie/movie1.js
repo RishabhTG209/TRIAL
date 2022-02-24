@@ -39,10 +39,12 @@ function showMovie(movie){
             console.log(elem._id);
             let movieName= elem._id;
             let response12=await fetch(
-                `https://vast-dusk-74727.herokuapp.com/movielist/single/${movieName}`
+                `https://vast-dusk-74727.herokuapp.com/movielist/update/${movieName}`
             );
             let data12=await response12.json();
             console.log("Data: ",data12);
+            data12.rating=data12.rating+1;
+            console.log(data12.rating);
         })
         // let poster=document.createElement("img")
         // poster.src=movie.Poster;

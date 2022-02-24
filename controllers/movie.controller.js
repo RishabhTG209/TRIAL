@@ -48,7 +48,7 @@ router.patch("/update/:id",async (req,res)=>{
 })
 
 // Delete
-router.delete("/:id",async (req,res)=>{
+router.delete("/delete/:id",async (req,res)=>{
     try{
         const movie= await Movie.findByIdAndDelete(req.params.id).lean().exec()
         return res.send(movie);
