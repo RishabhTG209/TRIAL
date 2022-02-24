@@ -35,6 +35,15 @@ async function fetchdata(){
 
 function showMovie(movie){
         console.log(movie);
+        movie.forEach(async(elem)=>{
+            console.log(elem._id);
+            let movieName= elem._id;
+            let response12=await fetch(
+                `https://vast-dusk-74727.herokuapp.com/movielist/single/${movieName}`
+            );
+            let data12=await response12.json();
+            console.log("Data: ",data12);
+        })
         // let poster=document.createElement("img")
         // poster.src=movie.Poster;
         // poster.setAttribute("class","poster")

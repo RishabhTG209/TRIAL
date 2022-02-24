@@ -24,7 +24,39 @@ router.get("/",async(req,res)=>{
     }
 })
 
+// Get Particulaar
+router.get("/single/:id",async (req,res)=>{
+    try{
+        const movie= await Movie.findById(req.params.id).lean().exec()
+        return res.send(movie);
+    }
+    catch(err){
+        console.log(res);
+    }
+})
+// Patch
+router.patch("/update/:id",async (req,res)=>{
+    try{
+        const movie= await Movie.findByIdAndUpdate(req.params.id,req.body,{
+            new: true
+        }).lean().exec()
+        return res.send(movie);
+    }
+    catch(err){
+        console.log(res);
+    }
+})
 
+// Delete
+router.delete("/:id",async (req,res)=>{
+    try{
+        const movie= await Movie.findByIdAndDelete(req.params.id).lean().exec()
+        return res.send(movie);
+    }
+    catch(err){
+        console.log(res);
+    }
+})
 
 
 
