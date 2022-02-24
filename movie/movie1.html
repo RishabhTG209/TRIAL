@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Adda</title>
+
+    <link rel = "icon" href = "https://cdn5.vectorstock.com/i/1000x1000/31/24/alphabet-letter-combination-ma-m-a-with-grunge-vector-23793124.jpg"  type = "image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="movie1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div id="heading">MOVIE ADDA</div>
+    <div id="headingbar">
+        <p><i onclick="fetchdata()" class="fas fa-search"></i></p>
+        <input type="text" id="movieinput" placeholder="Enter the Movie Name">
+        <button onclick="fetchdata()">Search</button>;
+    </div>
+    <div id="check"></div>
+    <div id="inputdata"></div>
+    
+    <div id="frame">
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ca0737407ab1f3ea02f84fcb11581cbb17f0f0790a1d3dc65e83c5b807322894._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Suicide Squad <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">7.4</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/852affde0e5c5c9ad6cdab8f2aaccf2bdcdb34c3efeba068b818b500bd5351da._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Transformers : The Last Knight</p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">6.5</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/2ad1870c721abfd7be37b6b610c03f30f737416662b3723c9bd71dc044743d66._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Mirzapur <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">8.4</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f447f7b124e6c785d64c0772f46841159b8f58ab9fdf3a6489bd7fbdf2c37a51._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>The Family Man <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">8.6</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div id="frame">
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/5ad2a54869cf558b0c6f7a137a734a9ec5c7fe2fb2f85cbfa6a77504d823b3c3._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Tom Clancy's Without Remorse</p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">7.4</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ecdec1a8b0708e0b04a95e6761f7efad89b644e7078327fed5b288ae220d10c9._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Mortal Kombat <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">7.8</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f9a022e8162767b73825ada0e12b9937a86d7deba7e27933c3c22e153cd2f5d8._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>James Bond : Spectre <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">7.1</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="moviephoto">
+                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/a89a3d5a96b1330e5a9082dc3e7ccb69bd42b432cacb3d785d667562308252d0._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+            </div>
+            <div id="moviedata">
+                <p>Oceans's 8 <br><br></p>
+                <div id="imdb">
+                    <div id="forflex">
+                        <span class="rating">IMDB :</span>
+                        <span id="number" class="rating">6.9</span>
+                    </div>
+                    <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="movie1.js"></script>
