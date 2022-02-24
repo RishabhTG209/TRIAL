@@ -1,11 +1,12 @@
 const express = require('express')
-
+const cors = require('cors')
 const connect = require("./configs/db")
 const app = express()
 
 require('dotenv').config();
 const PORT = process.env.PORT || 3125;
 app.use(express.json())
+app.use(cors())
 
 const movieSchema= require("./controllers/movie.controller")
 
