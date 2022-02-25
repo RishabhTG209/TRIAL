@@ -4,7 +4,7 @@ const Movie = require('../models/movie.model')
 
 const router = express.Router()
 
-router.post("/",async(req,res)=>{
+router.post("/register",async(req,res)=>{
     try {
         const movies = await Movie.create(req.body);
 
