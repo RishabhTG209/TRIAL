@@ -14,7 +14,7 @@ app.use(cors())
 const movieSchema= require("./controllers/movie.controller")
 
 app.use("/movielist",movieSchema)
-
+app.post("/data",movieSchema)
 
 app.listen(PORT, async () =>{
 
