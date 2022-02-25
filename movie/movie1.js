@@ -29,7 +29,8 @@ async function fetchdata(){
             let movieName=document.querySelector("#movieinput").value;
 
                 let response=await fetch(
-                    `https://vast-dusk-74727.herokuapp.com/movielist`
+                    `https://sleepy-citadel-45065.herokuapp.com/contacts`
+                    // `https://vast-dusk-74727.herokuapp.com/movielist`
                     // `https://myapplication-nine-west.herokuapp.com/players`
                     // `https://www.omdbapi.com/?t=${movieName}&apikey=46d687e2`
                 );
@@ -47,17 +48,17 @@ async function fetchdata(){
 
 function showMovie(movie){
         console.log(movie);
-        movie.forEach(async(elem)=>{
-            console.log(elem._id);
-            let movieName= elem._id;
-            let response12=await fetch(
-                `https://vast-dusk-74727.herokuapp.com/movielist/single/${movieName}`
-            );
-            let data12=await response12.json();
-            console.log("Data: ",data12);
-            data12.rating=data12.rating+1;
-            console.log(data12.rating,data12.title);
-        })
+        // movie.forEach(async(elem)=>{
+            // console.log(elem._id);
+            // let movieName= elem._id;
+            // let response12=await fetch(
+            //     `https://vast-dusk-74727.herokuapp.com/movielist/update/${movieName}`
+            // );
+            // let data12=await response12.json();
+            // console.log("Data: ",data12);
+            // data12.rating=data12.rating+1;
+            // console.log(data12.rating,data12.title);
+        // })
         // let poster=document.createElement("img")
         // poster.src=movie.Poster;
         // poster.setAttribute("class","poster")

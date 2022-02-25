@@ -15,6 +15,7 @@ const movieSchema= require("./controllers/movie.controller")
 
 app.use("/movielist",movieSchema)
 
+
 app.listen(PORT, async () =>{
 
     try {
