@@ -51,12 +51,28 @@ function showMovie(movie){
         movie.forEach(async(elem)=>{
             console.log(elem._id);
             let movieName= elem._id;
+            // let someData = {
+            //     "title": "Rishabh",
+            //     "genre": "full stack",
+            //     "year": 2019,
+            //     "rating": 10
+            // }
             let response12=await fetch(
                 `https://vast-dusk-74727.herokuapp.com/movielist/single/${movieName}`
+                // ,
+                // {
+                //     method: 'PATCH', // Method itself
+                //     headers: {
+                //     'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
+                //     },
+                //     body: JSON.stringify(someData) // We send data in JSON format
+                // }
             );
             let data12=await response12.json();
             console.log("Data: ",data12);
+
             data12.rating=data12.rating+1;
+
             console.log(data12.rating,data12.title);
         })
         // let poster=document.createElement("img")
