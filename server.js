@@ -16,11 +16,12 @@ app.use(cors())
 
 const movieSchema= require("./controllers/movie.controller")
 const user_controller = require("./controllers/user_controller")
+const product_controller = require("./controllers/product_controller")
 const {register, login} = require("./controllers/auth_controller")
 
 
 app.use("/movielist",movieSchema)
-
+app.use("/product",product_controller);
 app.use("/user",user_controller);
 app.post("/register",register);
 app.post("/login",login);
